@@ -38,30 +38,36 @@ class DemoTests {
 
     @Test
     void testJpeg() {
-        Poster px = client.buildPoster(100004, params, PosterType.valueOf("jpeg"));
+        Poster p = client.buildPoster(100004, params, PosterType.valueOf("jpeg"));
     }
 
     @Test
     void testJpegAndScale() {
-        Poster px = client.buildPoster(100004, params, PosterType.jpeg, 0.5);
+        Poster p = client.buildPoster(100004, params, PosterType.jpeg, 0.5);
     }
 
     @Test
     void testWebp() {
-        Poster px = client.buildPoster(100004, params, PosterType.webp);
+        Poster p = client.buildPoster(100004, params, PosterType.webp);
     }
 
     @SneakyThrows
     @Test
+    void testPdfSave() {
+        Poster p = client.buildPoster(100004, params, PosterType.pdf);
+        p.save("a.pdf");
+    }
+    @SneakyThrows
+    @Test
     void testPdf() {
-        Poster px = client.buildPoster(100004, params, PosterType.pdf);
-        px.save("a.pdf");
+        Poster p = client.buildPoster(100004, params, PosterType.pdf);
+        System.out.println(p.size());
     }
 
     @SneakyThrows
     @Test
     void testBase64() {
-        Poster p3 = client.buildPoster(100004, params, PosterType.jpeg, true);
+        Poster p = client.buildPoster(100004, params, PosterType.jpeg, true);
     }
 
 

@@ -1,5 +1,6 @@
 package cn.fastposter.cloud.client;
 
+import lombok.Getter;
 import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -21,10 +22,13 @@ public class Poster extends FilterInputStream {
 
     String traceId;
 
-    public Poster(String traceId, PosterType type, InputStream in) {
+    long size;
+
+    public Poster(String traceId, PosterType type, InputStream in, long size) {
         super(in);
         this.type = type;
         this.traceId = traceId;
+        this.size = size;
     }
 
     @SneakyThrows
@@ -44,4 +48,12 @@ public class Poster extends FilterInputStream {
         save(traceId + "." + type);
     }
 
+    public long size() {
+        return this.size;
+    }
+
+    public String traceId() {
+        return this.traceId;
+    }
+    
 }
