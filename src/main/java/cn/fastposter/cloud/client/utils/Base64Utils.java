@@ -1,4 +1,4 @@
-package net.fastposter.client.utils;
+package cn.fastposter.cloud.client.utils;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;

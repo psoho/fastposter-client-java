@@ -1,4 +1,4 @@
-package net.fastposter.client;
+package cn.fastposter.cloud.client;
 
 import lombok.Builder;
 import lombok.Data;

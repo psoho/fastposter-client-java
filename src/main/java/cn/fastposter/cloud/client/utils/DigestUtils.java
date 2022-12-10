@@ -1,4 +1,4 @@
-package net.fastposter.client.utils;
+package cn.fastposter.cloud.client.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

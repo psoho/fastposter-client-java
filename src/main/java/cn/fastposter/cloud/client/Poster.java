@@ -1,4 +1,4 @@
-package net.fastposter.client;
+package cn.fastposter.cloud.client;
 
 import java.io.FilterInputStream;
 import java.io.InputStream;

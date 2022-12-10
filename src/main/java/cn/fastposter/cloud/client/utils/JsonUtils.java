@@ -1,4 +1,4 @@
-package net.fastposter.client.utils;
+package cn.fastposter.cloud.client.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
