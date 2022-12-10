@@ -1,9 +1,7 @@
 package net.fastposter.client.utils;
 
-import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
-import net.fastposter.client.FastposterClient;
 
 public class JsonUtils {
 
