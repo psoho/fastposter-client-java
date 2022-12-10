@@ -24,14 +24,13 @@ public class FastposterCloudClientAutoConfiguration {
     @Bean
     @ConditionalOnProperty("fastposter-cloud.app-key")
     FastposterCloudClient fastposterCloudClient() {
-        FastposterCloudClient client = FastposterCloudClient.builder()
+        return FastposterCloudClient.builder()
                 .appKey(properties.appKey)
                 .appSecret(properties.appSecret)
                 .endpoint(properties.endpoint)
                 .debug(properties.debug)
                 .trace(properties.trace)
                 .build();
-        return client;
     }
 
 }
