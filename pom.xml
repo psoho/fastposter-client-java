@@ -9,10 +9,17 @@
     <description>fastposter-cloud-client</description>
     <packaging>pom</packaging>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.6</version>
+    </parent>
+
     <modules>
         <module>fastposter-cloud-client-core</module>
-        <!--        <module>fastposter-cloud-client-starter</module>-->
+        <module>fastposter-cloud-client-starter</module>
     </modules>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
