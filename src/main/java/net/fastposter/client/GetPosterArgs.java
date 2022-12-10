@@ -35,5 +35,10 @@ public class GetPosterArgs {
      */
     String sign;
 
+    /**
+     * 是否返回base64格式
+     */
+    Boolean b64;
+
 
 }

@@ -10,7 +10,6 @@ public enum PosterType {
     png("png"),
     jpeg("jpeg"),
     webp("webp"),
-    b64("b64"),
     pdf("pdf");
 
     final String value;
