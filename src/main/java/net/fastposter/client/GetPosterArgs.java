@@ -15,4 +15,6 @@ public class GetPosterArgs {
 
     String sign;
 
+    Integer timestamp;
+
 }
