@@ -80,4 +80,13 @@ public class Poster extends FilterInputStream {
         return this.traceId;
     }
 
+    /**
+     * 返回Base64字符串
+     *
+     * @return
+     */
+    public String b64String() {
+        return new String(bytes());
+    }
+
 }

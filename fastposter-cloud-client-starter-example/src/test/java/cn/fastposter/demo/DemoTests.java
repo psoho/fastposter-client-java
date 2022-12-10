@@ -4,6 +4,7 @@ import cn.fastposter.cloud.client.FastposterCloudClient;
 import cn.fastposter.cloud.client.Poster;
 import cn.fastposter.cloud.client.PosterType;
 import lombok.SneakyThrows;
+import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,7 @@ class DemoTests {
         Poster p = client.buildPoster(100004, params, PosterType.pdf);
         p.save("a.pdf");
     }
+
     @SneakyThrows
     @Test
     void testPdf() {
@@ -69,6 +71,8 @@ class DemoTests {
     @Test
     void testBase64() {
         Poster p = client.buildPoster(100004, params, PosterType.jpeg, true);
+        String data = "<img style=\"width:300px;\" src=\"data:image/jpg;base64," + p.b64String() + "\"/>";
+        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
     }
 
 
