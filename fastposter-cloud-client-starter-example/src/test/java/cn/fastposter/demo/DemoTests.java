@@ -62,6 +62,7 @@ class DemoTests {
     void testPdf() {
         Poster p = client.buildPoster(100004, params, PosterType.pdf);
         System.out.println(p.size());
+        System.out.println(p.traceId());
     }
 
     @SneakyThrows
