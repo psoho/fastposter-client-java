@@ -16,6 +16,11 @@ public class GetPosterArgs {
     Integer id;
 
     /**
+     * 海报类型
+     */
+    String type;
+
+    /**
      * appKey
      */
     String appKey;
@@ -29,5 +34,6 @@ public class GetPosterArgs {
      * 验签
      */
     String sign;
+
 
 }
