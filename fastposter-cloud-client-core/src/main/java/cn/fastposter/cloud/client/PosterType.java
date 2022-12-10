@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 海报类型
  *
- * @author 小新 fastposter@163.com
+ * @author Alex小新 fastposter@163.com
  * @site <a href="https://cloud.fastposter.cn/"></>
  */
 @Getter

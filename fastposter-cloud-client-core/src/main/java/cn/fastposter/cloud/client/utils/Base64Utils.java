@@ -7,7 +7,7 @@ import java.util.Base64;
 /**
  * Base64工具类
  *
- * @author 小新 fastposter@163.com
+ * @author Alex小新 fastposter@163.com
  * @site <a href="https://cloud.fastposter.cn/"></>
  */
 public class Base64Utils {

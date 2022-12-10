@@ -6,7 +6,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * spring boot starter properties
  *
- * @author 阿沐 babamu@126.com
+ * @author Alex小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
  */
 @Data
 @ConfigurationProperties("fastposter-cloud")

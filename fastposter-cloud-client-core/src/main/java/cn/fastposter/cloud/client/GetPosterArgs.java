@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 生成海报参数
  *
- * @author 小新 fastposter@163.com
+ * @author Alex小新 fastposter@163.com
  * @site <a href="https://cloud.fastposter.cn/"></>
  */
 @Data

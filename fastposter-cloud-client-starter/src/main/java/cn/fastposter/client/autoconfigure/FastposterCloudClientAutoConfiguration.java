@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
 /**
  * spring boot starter AutoConfiguration
  *
- * @author 阿沐 babamu@126.com
+ * @author Alex小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
  */
 @Configuration
 @AllArgsConstructor
