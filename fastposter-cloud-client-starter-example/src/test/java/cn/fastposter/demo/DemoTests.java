@@ -6,6 +6,7 @@ import cn.fastposter.cloud.client.PosterType;
 import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,7 +34,7 @@ class DemoTests {
     @Test
     void testPng() {
         Poster p = client.buildPoster(100004, params, PosterType.png);
-        p.save();
+//        p.save();
     }
 
     @Test
@@ -53,6 +54,7 @@ class DemoTests {
 
     @SneakyThrows
     @Test
+    @Disabled
     void testPdfSave() {
         Poster p = client.buildPoster(100004, params, PosterType.pdf);
         p.save("a.pdf");
@@ -68,6 +70,7 @@ class DemoTests {
 
     @SneakyThrows
     @Test
+    @Disabled
     void testBase64() {
         Poster p = client.buildPoster(100004, params, PosterType.jpeg, true);
         String data = "<img style=\"width:300px;\" src=\"data:image/jpg;base64," + p.b64String() + "\"/>";
