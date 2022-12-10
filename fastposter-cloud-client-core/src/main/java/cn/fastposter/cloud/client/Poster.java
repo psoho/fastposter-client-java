@@ -1,8 +1,10 @@
 package cn.fastposter.cloud.client;
 
-import java.io.FilterInputStream;
-import java.io.InputStream;
+import lombok.SneakyThrows;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 
+import java.io.*;
 
 
 /**
@@ -12,19 +14,34 @@ import java.io.InputStream;
  * @site <a href="https://cloud.fastposter.cn/"></>
  */
 public class Poster extends FilterInputStream {
-    /**
-     * Creates a <code>FilterInputStream</code>
-     * by assigning the  argument <code>in</code>
-     * to the field <code>this.in</code> so as
-     * to remember it for later use.
-     *
-     * @param in the underlying input stream, or <code>null</code> if
-     *           this instance is to be created without an underlying stream.
-     */
-    protected Poster(String type, InputStream in) {
+
+    PosterType type;
+
+    private byte[] _bytes;
+
+    String traceId;
+
+    public Poster(String traceId, PosterType type, InputStream in) {
         super(in);
+        this.type = type;
+        this.traceId = traceId;
     }
 
+    @SneakyThrows
+    public byte[] bytes() {
+        if (_bytes == null) {
+            _bytes = IOUtils.toByteArray(this);
+        }
+        return _bytes;
+    }
 
+    @SneakyThrows
+    public void save(String path) {
+        FileUtils.writeByteArrayToFile(new File(path), bytes());
+    }
+
+    public void save() {
+        save(traceId + "." + type);
+    }
 
 }

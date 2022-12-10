@@ -1,6 +1,7 @@
 package cn.fastposter.demo;
 
 import cn.fastposter.cloud.client.FastposterCloudClient;
+import cn.fastposter.cloud.client.Poster;
 import cn.fastposter.cloud.client.PosterType;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.BeforeEach;
@@ -31,35 +32,36 @@ class DemoTests {
 
     @Test
     void testPng() {
-        byte[] p = client.buildPoster(100004, params, PosterType.valueOf("png"));
+        Poster p = client.buildPoster(100004, params, PosterType.valueOf("png"));
+        p.save("");
     }
 
     @Test
     void testJpeg() {
-        byte[] px = client.buildPoster(100004, params, PosterType.jpeg);
+        Poster px = client.buildPoster(100004, params, PosterType.jpeg);
     }
 
     @Test
     void testJpegAndScale() {
-        byte[] px = client.buildPoster(100004, params, PosterType.jpeg, 0.5);
+        Poster px = client.buildPoster(100004, params, PosterType.jpeg, 0.5);
     }
 
     @Test
     void testWebp() {
-        byte[] px = client.buildPoster(100004, params, PosterType.webp);
+        Poster px = client.buildPoster(100004, params, PosterType.webp);
     }
 
     @SneakyThrows
     @Test
     void testPdf() {
-        byte[] px = client.buildPoster(100004, params, PosterType.pdf);
-        FileCopyUtils.copy(px, new File("a.pdf"));
+        Poster px = client.buildPoster(100004, params, PosterType.pdf);
+        px.save("a.pdf");
     }
 
     @SneakyThrows
     @Test
     void testBase64() {
-        byte[] p3 = client.buildPoster(100004, params, PosterType.jpeg, true);
+        Poster p3 = client.buildPoster(100004, params, PosterType.jpeg, true);
     }
 
 
