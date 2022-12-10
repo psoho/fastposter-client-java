@@ -31,11 +31,6 @@ public class FastposterCloudClientAutoConfiguration {
                 .debug(properties.debug)
                 .trace(properties.trace)
                 .build();
-
-        if(properties.warmup){
-            client.getInfo();
-        }
-
         return client;
     }
 

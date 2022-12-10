@@ -37,10 +37,4 @@ public class FastposterCloudClientProperties {
      */
     boolean trace;
 
-    /**
-     * 是否预热
-     */
-    boolean warmup;
-
-
 }
