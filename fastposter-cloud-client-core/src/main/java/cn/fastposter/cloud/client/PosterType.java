@@ -15,6 +15,7 @@ public enum PosterType {
 
     png("png"),
     jpeg("jpeg"),
+    jpg("jpeg"),
     webp("webp"),
     pdf("pdf");
 

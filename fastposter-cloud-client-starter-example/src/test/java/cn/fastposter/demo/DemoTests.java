@@ -32,13 +32,13 @@ class DemoTests {
 
     @Test
     void testPng() {
-        Poster p = client.buildPoster(100004, params, PosterType.valueOf("png"));
-        p.save("");
+        Poster p = client.buildPoster(100004, params, PosterType.png);
+        p.save();
     }
 
     @Test
     void testJpeg() {
-        Poster px = client.buildPoster(100004, params, PosterType.jpeg);
+        Poster px = client.buildPoster(100004, params, PosterType.valueOf("jpeg"));
     }
 
     @Test

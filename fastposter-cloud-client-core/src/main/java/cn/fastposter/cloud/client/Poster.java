@@ -8,7 +8,7 @@ import java.io.*;
 
 
 /**
- * 生成海报参数
+ * 生成海报对象
  *
  * @author Alex小新 fastposter@163.com
  * @site <a href="https://cloud.fastposter.cn/"></>

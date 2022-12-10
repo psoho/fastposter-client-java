@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FastposterCloudClientDemoApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FastposterCloudClientDemoApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
 }
