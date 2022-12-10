@@ -7,64 +7,18 @@
     <version>1.1.0</version>
     <name>fastposter-cloud-client</name>
     <description>fastposter-cloud-client</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>fastposter-cloud-client-core</module>
+        <!--        <module>fastposter-cloud-client-starter</module>-->
+    </modules>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.10.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.14.1</version>
-        </dependency>
-
-        <!-- for test -->
-
-        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp-tls -->
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp-tls</artifactId>
-            <version>4.10.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
-            <scope>test</scope>
-        </dependency>
-
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
     <repositories>
         <repository>
@@ -90,5 +44,27 @@
         </pluginRepository>
     </pluginRepositories>
 
+    <licenses>
+        <license>
+            <name>The MIT License (MIT)</name>
+            <url>http://www.opensource.org/licenses/mit-license.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/psoho/fastposter-cloud-client</url>
+        <connection>scm:git:git@github.com:psoho/fastposter-cloud-client.git</connection>
+        <developerConnection>scm:git:git@github.com:psoho/fastposter-cloud-client.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>Alex小新</name>
+            <email>fastposter@163.com</email>
+            <organization>Changsha Small Code Network Technology Co., LTD</organization>
+            <organizationUrl>https://cloud.fastposter.cn/</organizationUrl>
+        </developer>
+    </developers>
 
 </project>
