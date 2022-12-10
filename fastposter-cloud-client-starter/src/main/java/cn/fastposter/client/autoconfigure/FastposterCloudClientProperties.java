@@ -1,6 +1,7 @@
 package cn.fastposter.client.autoconfigure;
 
 import lombok.Data;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -10,13 +11,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @site <a href="https://cloud.fastposter.cn/"></>
  */
 @Data
+@Setter
 @ConfigurationProperties("fastposter-cloud")
 public class FastposterCloudClientProperties {
 
     /**
      * 接入点
      */
-    String endpoint;
+    String endpoint = "https://cloud.prodapi.cn";
 
     /**
      * appKey

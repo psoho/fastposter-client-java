@@ -18,6 +18,7 @@
     <modules>
         <module>fastposter-cloud-client-core</module>
         <module>fastposter-cloud-client-starter</module>
+        <module>fastposter-cloud-client-starter-example</module>
     </modules>
 
 
