@@ -21,6 +21,11 @@ public class GetPosterArgs {
     String type;
 
     /**
+     * 缩放比
+     */
+    double scale = 1.0;
+
+    /**
      * appKey
      */
     String appKey;
