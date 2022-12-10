@@ -5,6 +5,12 @@ import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * MD5工具类
+ *
+ * @author 小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
+ */
 public class DigestUtils {
     private static final String MD5_ALGORITHM_NAME = "MD5";
     private static final char[] HEX_CHARS = new char[]{'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};

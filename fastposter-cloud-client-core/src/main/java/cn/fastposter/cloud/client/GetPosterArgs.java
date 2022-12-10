@@ -4,7 +4,10 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- * 获取海报参数
+ * 生成海报参数
+ *
+ * @author 小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
  */
 @Data
 @Builder

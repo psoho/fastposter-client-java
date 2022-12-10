@@ -3,6 +3,14 @@ package cn.fastposter.cloud.client;
 import java.io.FilterInputStream;
 import java.io.InputStream;
 
+
+
+/**
+ * 生成海报参数
+ *
+ * @author 小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
+ */
 public class Poster extends FilterInputStream {
     /**
      * Creates a <code>FilterInputStream</code>

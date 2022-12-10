@@ -4,6 +4,12 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
+/**
+ * Base64工具类
+ *
+ * @author 小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
+ */
 public class Base64Utils {
     private static final Charset DEFAULT_CHARSET;
 

@@ -3,6 +3,12 @@ package cn.fastposter.cloud.client.utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 
+/**
+ * Json工具类
+ *
+ * @author 小新 fastposter@163.com
+ * @site <a href="https://cloud.fastposter.cn/"></>
+ */
 public class JsonUtils {
 
     /**
