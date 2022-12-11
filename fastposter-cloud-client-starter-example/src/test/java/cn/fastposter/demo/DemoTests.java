@@ -58,7 +58,7 @@ class DemoTests {
 
     @SneakyThrows
     @Test
-//    @Disabled
+    @Disabled
     void testPdfSave() {
         Poster p = client.buildPoster(100004, params, PosterType.pdf);
         p.save("a.pdf");
@@ -79,7 +79,7 @@ class DemoTests {
     void testBase64() {
         Poster p = client.buildPoster(100004, params, PosterType.jpeg, true);
         String data = "<img style=\"width:300px;\" src=\"data:image/jpg;base64," + p.b64String() + "\"/>";
-        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
+//        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
     }
 
 
