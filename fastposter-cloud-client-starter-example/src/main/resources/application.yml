@@ -2,4 +2,3 @@ fastposter-cloud:
   app-key: demo
   app-secret: demo
   debug: true
-  endpoint: http://1.116.153.165:30021
