@@ -7,11 +7,13 @@ import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,9 +34,10 @@ class DemoTests {
     }
 
     @Test
-    void testPng() {
+    @RepeatedTest(5)
+    void testPng() throws IOException {
         Poster p = client.buildPoster(100004, params, PosterType.png);
-//        p.save();
+        p.save();
     }
 
     @Test
@@ -54,7 +57,7 @@ class DemoTests {
 
     @SneakyThrows
     @Test
-    @Disabled
+//    @Disabled
     void testPdfSave() {
         Poster p = client.buildPoster(100004, params, PosterType.pdf);
         p.save("a.pdf");
@@ -62,6 +65,7 @@ class DemoTests {
 
     @SneakyThrows
     @Test
+    @Disabled
     void testPdf() {
         Poster p = client.buildPoster(100004, params, PosterType.pdf);
         System.out.println(p.size());

@@ -2,10 +2,9 @@ package cn.fastposter.cloud.client;
 
 import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
-import java.io.FilterInputStream;
 import java.io.InputStream;
 
 
@@ -15,7 +14,7 @@ import java.io.InputStream;
  * @author Alex小新 fastposter@163.com
  * @site <a href="https://cloud.fastposter.cn/"></>
  */
-public class Poster extends FilterInputStream {
+public class Poster {
 
     PosterType type;
 
@@ -25,11 +24,10 @@ public class Poster extends FilterInputStream {
 
     long size;
 
-    public Poster(String traceId, PosterType type, InputStream in, long size) {
-        super(in);
+    public Poster(String traceId, PosterType type, byte[] bytes) {
         this.type = type;
         this.traceId = traceId;
-        this.size = size;
+        this._bytes = bytes;
     }
 
     /**
@@ -39,9 +37,6 @@ public class Poster extends FilterInputStream {
      */
     @SneakyThrows
     public byte[] bytes() {
-        if (_bytes == null) {
-            _bytes = IOUtils.toByteArray(this);
-        }
         return _bytes;
     }
 
@@ -87,6 +82,15 @@ public class Poster extends FilterInputStream {
      */
     public String b64String() {
         return new String(bytes());
+    }
+
+    /**
+     * 返回流
+     *
+     * @return
+     */
+    public InputStream byteStream() {
+        return new ByteArrayInputStream(bytes());
     }
 
 }
