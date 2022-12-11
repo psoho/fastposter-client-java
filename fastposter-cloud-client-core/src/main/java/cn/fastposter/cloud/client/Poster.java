@@ -52,9 +52,13 @@ public class Poster {
 
     /**
      * 保存海报
+     *
+     * @return
      */
-    public void save() {
-        save(traceId.substring(0, 16) + "." + type);
+    public String save() {
+        String path = traceId.substring(0, 16) + "." + type;
+        save(path);
+        return path;
     }
 
     /**
