@@ -35,6 +35,7 @@ class DemoTests {
 
     @Test
     @RepeatedTest(5)
+    @Disabled
     void testPng() throws IOException {
         Poster p = client.buildPoster(100004, params, PosterType.png);
         p.save();
