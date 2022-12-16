@@ -1,4 +1,4 @@
 fastposter-cloud:
   app-key: demo
-  app-secret: demo0000
+  app-secret: demo
   debug: true

@@ -80,7 +80,7 @@ class DemoTests {
     void testBase64() {
         Poster p = client.buildPoster(4, params, PosterType.jpeg, true);
         String data = "<img style=\"width:300px;\" src=\"data:image/jpg;base64," + p.b64String() + "\"/>";
-        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
+//        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
     }
 
 
