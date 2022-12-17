@@ -35,10 +35,10 @@ class DemoTests {
 
     @Test
     @RepeatedTest(5)
-    @Disabled
+//    @Disabled
     void testPng() throws IOException {
         Poster p = client.buildPoster(4, params, PosterType.png);
-        p.save();
+//        p.save();
     }
 
     @Test
