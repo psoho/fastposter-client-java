@@ -12,7 +12,7 @@ import java.io.InputStream;
  * 生成海报对象，对象本身是一个输入流，可以直接读取。
  *
  * @author Alex小新 fastposter@163.com
- * @site <a href="https://cloud.fastposter.cn/"></>
+ * @site <a href="https://cloud.fastposter.net/"></>
  */
 public class Poster {
 

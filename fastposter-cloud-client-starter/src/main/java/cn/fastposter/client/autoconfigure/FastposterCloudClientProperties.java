@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * spring boot starter properties
  *
  * @author Alex小新 fastposter@163.com
- * @site <a href="https://cloud.fastposter.cn/"></>
+ * @site <a href="https://cloud.fastposter.net/"></>
  */
 @Data
 @Setter
@@ -18,7 +18,7 @@ public class FastposterCloudClientProperties {
     /**
      * 接入点
      */
-    String endpoint = "https://cloud.prodapi.cn";
+    String endpoint = "https://cloud.fastposter.net";
 
     /**
      * appKey
