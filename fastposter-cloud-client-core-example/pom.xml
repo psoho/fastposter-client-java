@@ -7,12 +7,12 @@
     <parent>
         <groupId>cn.fastposter</groupId>
         <artifactId>fastposter-cloud-client</artifactId>
-        <version>1.2.3</version>
+        <version>${revision}</version>
     </parent>
 
     <groupId>cn.fastposter</groupId>
     <artifactId>fastposter-cloud-client-core-example</artifactId>
-    <version>1.2.3</version>
+    <version>${revision}</version>
 
     <dependencies>
 
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>cn.fastposter</groupId>
             <artifactId>fastposter-cloud-client-core</artifactId>
-            <version>1.2.3</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp-tls -->

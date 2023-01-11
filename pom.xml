@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.fastposter</groupId>
     <artifactId>fastposter-cloud-client</artifactId>
-    <version>1.2.3</version>
+    <version>${revision}</version>
     <name>fastposter-cloud-client</name>
     <description>
         fastposter-cloud-client make poster develop so easy and so happy.
@@ -26,6 +26,7 @@
 
 
     <properties>
+        <revision>1.2.4</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>

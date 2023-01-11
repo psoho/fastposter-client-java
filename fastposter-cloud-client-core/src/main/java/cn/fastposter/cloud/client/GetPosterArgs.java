@@ -16,9 +16,9 @@ import lombok.Data;
 public class GetPosterArgs {
 
     /**
-     * 海报ID
+     * 海报UUID
      */
-    Integer id;
+    String uuid;
 
     /**
      * 海报类型
@@ -28,7 +28,7 @@ public class GetPosterArgs {
     /**
      * 缩放比
      */
-    double scale = 1.0;
+    Double scale = 1.0;
 
     /**
      * appKey
