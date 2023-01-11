@@ -29,12 +29,12 @@ public class PosterBuilder {
     Boolean b64;
 
     @Builder.Default
-    Map<String, Object> _params = new HashMap<>();
+    Map<String, Object> params = new HashMap<>();
 
     FastposterCloudClient client;
 
     public PosterBuilder add(String name, Object value) {
-        _params.put(name, value);
+        params.put(name, value);
         return this;
     }
 
@@ -43,7 +43,7 @@ public class PosterBuilder {
     }
 
     public PosterBuilder setParams(Map<String, Object> params) {
-        this._params = params;
+        this.params = params;
         return this;
     }
 
@@ -89,4 +89,8 @@ public class PosterBuilder {
         return this;
     }
 
+    public PosterBuilder scale(double scale) {
+        this.scale = scale;
+        return this;
+    }
 }
