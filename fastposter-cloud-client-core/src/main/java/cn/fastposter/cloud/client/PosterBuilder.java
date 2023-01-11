@@ -28,6 +28,11 @@ public class PosterBuilder {
      */
     Boolean b64;
 
+    /**
+     * 用户代理
+     */
+    String userAgent;
+
     @Builder.Default
     protected Map<String, Object> params = new HashMap<>();
 
@@ -171,4 +176,14 @@ public class PosterBuilder {
         return client.getArgs(this);
     }
 
+    /**
+     * 设置用户代理
+     *
+     * @param userAgent
+     * @return
+     */
+    public PosterBuilder userAgent(String userAgent) {
+        this.userAgent = userAgent;
+        return this;
+    }
 }
