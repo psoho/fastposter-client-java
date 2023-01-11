@@ -57,7 +57,7 @@ public class PosterBuilder {
     /**
      * 设置海报参数
      *
-     * @param params
+     * @param params 参数
      * @return
      */
     public PosterBuilder setParams(Map<String, Object> params) {

@@ -2,8 +2,8 @@ package cn.fastposter.demo;
 
 import cn.fastposter.cloud.client.FastposterCloudClient;
 import cn.fastposter.cloud.client.Poster;
-import cn.fastposter.cloud.client.PosterType;
 import lombok.SneakyThrows;
+import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.RepeatedTest;
@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +24,7 @@ class DemoTests {
 
     Map<String, Object> params;
 
-    String uuid = "";
+    String uuid = "2a72b451834d4c59";
 
     @BeforeEach
     void before() {
@@ -37,39 +38,36 @@ class DemoTests {
     @RepeatedTest(20)
 //    @Disabled
     void testPng() throws IOException {
-        Poster p = client.buildPoster(uuid, params, PosterType.png);
-//        p.save();
+        client.buildPoster(uuid).setParams(params).png().build().save();
     }
 
     @Test
     void testJpeg() {
-        Poster p = client.buildPoster(uuid, params, PosterType.valueOf("jpeg"));
-        p.save("aaa.jpeg");
+        client.buildPoster(uuid).setParams(params).jpeg().build().save();
     }
 
     @Test
     void testJpegAndScale() {
-        Poster p = client.buildPoster(uuid, params, PosterType.jpeg, 0.5);
+        client.buildPoster(uuid).setParams(params).scale(0.5).build().save();
     }
 
     @Test
     void testWebp() {
-        Poster p = client.buildPoster(uuid, params, PosterType.webp);
+        client.buildPoster(uuid).setParams(params).webp().build().save();
     }
 
     @SneakyThrows
     @Test
     @Disabled
     void testPdfSave() {
-        Poster p = client.buildPoster(uuid, params, PosterType.pdf);
-        p.save("a.pdf");
+        client.buildPoster(uuid).setParams(params).pdf().build().save();
     }
 
     @SneakyThrows
     @Test
     @Disabled
     void testPdf() {
-        Poster p = client.buildPoster(uuid, params, PosterType.pdf);
+        Poster p = client.buildPoster(uuid).setParams(params).pdf().build();
         System.out.println(p.size());
         System.out.println(p.traceId());
     }
@@ -78,9 +76,9 @@ class DemoTests {
     @Test
 //    @Disabled
     void testBase64() {
-        Poster p = client.buildPoster(uuid, params, PosterType.jpeg, true);
+        Poster p = client.buildPoster(uuid).setParams(params).b64().build();
         String data = "<img style=\"width:300px;\" src=\"data:image/jpg;base64," + p.b64String() + "\"/>";
-//        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
+        FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
     }
 
 
