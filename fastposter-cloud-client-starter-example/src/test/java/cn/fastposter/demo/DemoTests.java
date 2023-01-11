@@ -37,37 +37,37 @@ class DemoTests {
     @Test
     @RepeatedTest(20)
 //    @Disabled
-    void testPng() throws IOException {
-        client.buildPoster(uuid).setParams(params).png().build().save();
+    void testPng() {
+        client.buildPoster(uuid).params(params).png().build().save();
     }
 
     @Test
     void testJpeg() {
-        client.buildPoster(uuid).setParams(params).jpeg().build().save();
+        client.buildPoster(uuid).params(params).jpeg().build().save();
     }
 
     @Test
     void testJpegAndScale() {
-        client.buildPoster(uuid).setParams(params).scale(0.5).build().save();
+        client.buildPoster(uuid).params(params).scale(0.5).build().save();
     }
 
     @Test
     void testWebp() {
-        client.buildPoster(uuid).setParams(params).webp().build().save();
+        client.buildPoster(uuid).params(params).webp().build().save();
     }
 
     @SneakyThrows
     @Test
     @Disabled
     void testPdfSave() {
-        client.buildPoster(uuid).setParams(params).pdf().build().save();
+        client.buildPoster(uuid).params(params).pdf().build().save();
     }
 
     @SneakyThrows
     @Test
     @Disabled
     void testPdf() {
-        Poster p = client.buildPoster(uuid).setParams(params).pdf().build();
+        Poster p = client.buildPoster(uuid).params(params).pdf().build();
         System.out.println(p.size());
         System.out.println(p.traceId());
     }
@@ -76,7 +76,7 @@ class DemoTests {
     @Test
 //    @Disabled
     void testBase64() {
-        Poster p = client.buildPoster(uuid).setParams(params).b64().build();
+        Poster p = client.buildPoster(uuid).params(params).b64().build();
         String data = "<img style=\"width:300px;\" src=\"data:image/jpg;base64," + p.b64String() + "\"/>";
         FileUtils.writeStringToFile(new File("b64.html"), data, "utf-8");
     }
