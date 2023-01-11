@@ -34,6 +34,16 @@ public class GetPosterArgs {
     String appKey;
 
     /**
+     * 时间戳10位 new Date().getTime()/1000
+     */
+    Long timestamp;
+
+    /**
+     * 随机字符串已存在 16位
+     */
+    String nonce;
+
+    /**
      * 载荷
      */
     String payload;

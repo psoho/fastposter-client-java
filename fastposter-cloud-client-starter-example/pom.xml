@@ -7,12 +7,12 @@
     <parent>
         <groupId>cn.fastposter</groupId>
         <artifactId>fastposter-cloud-client</artifactId>
-        <version>1.2.2</version>
+        <version>1.2.3</version>
     </parent>
 
     <groupId>cn.fastposter</groupId>
     <artifactId>fastposter-cloud-client-starter-example</artifactId>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
 
     <dependencies>
         <dependency>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>cn.fastposter</groupId>
             <artifactId>fastposter-cloud-client-starter</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.3</version>
         </dependency>
 
     </dependencies>

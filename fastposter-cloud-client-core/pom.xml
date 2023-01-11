@@ -8,7 +8,7 @@
     <parent>
         <groupId>cn.fastposter</groupId>
         <artifactId>fastposter-cloud-client</artifactId>
-        <version>1.2.2</version>
+        <version>1.2.3</version>
     </parent>
 
     <dependencies>
@@ -33,14 +33,6 @@
         </dependency>
 
         <!-- for test -->
-
-        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp-tls -->
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp-tls</artifactId>
-            <version>4.10.0</version>
-            <scope>test</scope>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
