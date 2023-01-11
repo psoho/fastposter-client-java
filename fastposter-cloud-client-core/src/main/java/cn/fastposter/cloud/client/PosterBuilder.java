@@ -160,4 +160,15 @@ public class PosterBuilder {
         return this;
     }
 
+    /**
+     * 获取生成海报的完整参数
+     * <p>
+     * 注意：客户端仍需要添加指定的HTTP头，详情请参考文档。
+     *
+     * @return
+     */
+    public GetPosterArgs getArgs() {
+        return client.getArgs(this);
+    }
+
 }

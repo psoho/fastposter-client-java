@@ -1,5 +1,6 @@
 package cn.fastposter.cloud.client;
 
+import cn.fastposter.cloud.client.utils.JsonUtils;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
 import lombok.Data;
@@ -61,4 +62,12 @@ public class GetPosterArgs {
     Boolean b64;
 
 
+    /**
+     * 返回Json字符串
+     *
+     * @return
+     */
+    public String toJson() {
+        return JsonUtils.toJson(this);
+    }
 }
