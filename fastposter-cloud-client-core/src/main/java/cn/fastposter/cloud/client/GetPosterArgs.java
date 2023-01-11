@@ -1,5 +1,6 @@
 package cn.fastposter.cloud.client;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
 import lombok.Data;
 
@@ -11,6 +12,7 @@ import lombok.Data;
  */
 @Data
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class GetPosterArgs {
 
     /**
@@ -39,7 +41,7 @@ public class GetPosterArgs {
     Long timestamp;
 
     /**
-     * 随机字符串已存在 16位
+     * 随机字符串 16位
      */
     String nonce;
 
