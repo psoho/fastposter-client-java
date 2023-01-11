@@ -81,7 +81,7 @@ public class PosterBuilder {
      * @param posterType
      * @return
      */
-    public PosterBuilder type(PosterType posterType) {
+    private PosterBuilder type(PosterType posterType) {
         assert posterType != null;
         this.type = posterType;
         return this;
@@ -90,12 +90,12 @@ public class PosterBuilder {
     /**
      * 设置海报类型
      *
-     * @param posterType jpg|jpeg|png|webp|pdf
+     * @param type jpg|jpeg|png|webp|pdf
      * @return
      */
-    public PosterBuilder type(String posterType) {
-        assert posterType != null;
-        this.type = Enum.valueOf(PosterType.class, posterType.trim().toLowerCase());
+    public PosterBuilder type(String type) {
+        assert type != null;
+        this.type = Enum.valueOf(PosterType.class, type.trim().toLowerCase());
         return this;
     }
 

@@ -9,7 +9,7 @@ import java.io.InputStream;
 
 
 /**
- * 生成海报对象，对象本身是一个输入流，可以直接读取。
+ * 海报对象
  *
  * @author Alex小新 fastposter@163.com
  * @site <a href="https://cloud.fastposter.net/"></>
@@ -26,7 +26,7 @@ public class Poster {
 
     boolean b64;
 
-    public Poster(String traceId, PosterType type, byte[] bytes, Boolean b64) {
+    protected Poster(String traceId, PosterType type, byte[] bytes, Boolean b64) {
         this.type = type;
         this.traceId = traceId;
         this._bytes = bytes;
@@ -95,7 +95,7 @@ public class Poster {
     }
 
     /**
-     * 返回流
+     * 返回海报内存流
      *
      * @return
      */
