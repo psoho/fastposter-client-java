@@ -18,7 +18,7 @@ public class FastposterCloudClientProperties {
     /**
      * 接入点
      */
-    String endpoint = "https://cloud.fastposter.net";
+    String endpoint = "https://api.fastposter.net";
 
     /**
      * appKey

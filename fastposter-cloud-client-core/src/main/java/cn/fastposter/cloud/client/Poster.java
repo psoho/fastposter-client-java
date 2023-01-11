@@ -24,10 +24,13 @@ public class Poster {
 
     long size;
 
-    public Poster(String traceId, PosterType type, byte[] bytes) {
+    boolean b64;
+
+    public Poster(String traceId, PosterType type, byte[] bytes, Boolean b64) {
         this.type = type;
         this.traceId = traceId;
         this._bytes = bytes;
+        this.b64 = b64 != null && b64;
     }
 
     /**
@@ -57,6 +60,9 @@ public class Poster {
      */
     public String save() {
         String path = traceId.substring(0, 16) + "." + type;
+        if (b64) {
+            path += ".b64";
+        }
         save(path);
         return path;
     }

@@ -22,22 +22,14 @@ class FastposterCloudTest {
         Map<String, Object> params = new HashMap<>();
         params.put("name", "测试文本");
 
-        Poster p1 = client.buildPoster("uuid")
+        client.buildPoster("2a72b451834d4c59")
                 .b64()
                 .png()
                 .type("png")
-                .add("name", "测试文本")
-                .add("name", "测试文本")
-                .add("name", "测试文本")
-                .build();
+                .add("name", "你好")
+                .build()
+                .save();
 
-        System.out.println(p1.traceId());
-
-////                .save("aaa.png");
-//        Poster p = client.buildPoster("", params);
-////        p.save(); // 保存海报
-//        p.bytes();  // 返回字节数组
-//        p.byteStream(); // 返回字节流
     }
 
 
