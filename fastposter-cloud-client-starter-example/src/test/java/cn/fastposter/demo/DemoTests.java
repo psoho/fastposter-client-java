@@ -21,7 +21,7 @@ class DemoTests {
     @Autowired
     FastposterCloudClient client;
 
-    Map<String, String> params;
+    Map<String, Object> params;
 
     String uuid = "";
 
