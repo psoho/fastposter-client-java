@@ -51,6 +51,18 @@ public class PosterBuilder {
     }
 
     /**
+     * 增加参数，支持链式调用
+     *
+     * @param name
+     * @param value
+     * @return
+     */
+    public PosterBuilder put(String name, Object value) {
+        params.put(name, value);
+        return this;
+    }
+
+    /**
      * 构建海报，发起HTTP请求
      *
      * @return
