@@ -24,7 +24,7 @@ class DemoTests {
 
     Map<String, Object> params;
 
-    String uuid = "2a72b451834d4c59";
+    String uuid = "ced9b1d5337d494c";
 
     @BeforeEach
     void before() {

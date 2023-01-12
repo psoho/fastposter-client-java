@@ -22,7 +22,7 @@ class FastposterCloudTest {
         params.put("name", 100);
 
         // 生成海报并保存
-        client.buildPoster("2a72b451834d4c59").params(params).build().save();
+        client.buildPoster("ced9b1d5337d494c").params(params).build().save();
 
     }
 
