@@ -17,7 +17,7 @@ class FastposterCloudTest {
     FastposterCloudClient client;
 
     @Test
-    @RepeatedTest(100)
+    @RepeatedTest(105)
     void testPng() {
 
         // 获取参数
