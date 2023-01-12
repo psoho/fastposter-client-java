@@ -20,7 +20,7 @@ class FastposterCloudTest {
     @RepeatedTest(105)
     void testPng() {
 
-        // 获取参数
+        // 组装参数
         Map<String, Object> params = new HashMap<>();
         params.put("name", RandomUtils.randomAlphanumeric(10));
 
