@@ -18,26 +18,26 @@ public class FastposterCloudClientProperties {
     /**
      * 接入点
      */
-    String endpoint;
+    private String endpoint = "https://api.fastposter.net";
 
     /**
      * appKey
      */
-    String appKey;
+    private String appKey;
 
     /**
      * appSecret
      */
-    String appSecret;
+    private String appSecret;
 
     /**
      * 是否打开调试
      */
-    boolean debug;
+    private boolean debug;
 
     /**
      * 是否打开追踪
      */
-    boolean trace;
+    private boolean trace;
 
 }

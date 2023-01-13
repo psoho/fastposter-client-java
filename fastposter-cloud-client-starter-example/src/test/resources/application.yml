@@ -1,5 +1,5 @@
+
 fastposter-cloud:
-  app-key: 1f5aa8d75f2d4bc4
-  app-secret: 8a395182a41e41ad9318cea4e1018cdc
-  debug: true
-  endpoint: https://api.fastposter.net/
+  app-key: c3978ef24ef744cb
+  app-secret: 15f97f2552534d34844d08dc41d13ddd
+  debug: true   # 是否开启调试

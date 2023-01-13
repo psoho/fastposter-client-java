@@ -26,11 +26,11 @@ public class FastposterCloudClientAutoConfiguration {
     @Bean
     FastposterCloudClient fastposterCloudClient() {
         return FastposterCloudClient.builder()
-                .appKey(properties.appKey)
-                .appSecret(properties.appSecret)
-                .endpoint(properties.endpoint)
-                .debug(properties.debug)
-                .trace(properties.trace)
+                .appKey(properties.getAppKey())
+                .appSecret(properties.getAppSecret())
+                .endpoint(properties.getEndpoint())
+                .debug(properties.isDebug())
+                .trace(properties.isTrace())
                 .build();
     }
 

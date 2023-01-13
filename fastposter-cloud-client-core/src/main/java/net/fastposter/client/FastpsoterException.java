@@ -14,12 +14,14 @@ import lombok.EqualsAndHashCode;
 public class FastpsoterException extends RuntimeException {
     private static final long serialVersionUID = 1L;
 
+    private Long seq;
     private int code;
     private String msg;
     private String traceId;
 
-    public FastpsoterException(int code, String msg, String traceId) {
+    public FastpsoterException(long seq, int code, String msg, String traceId) {
         super(msg);
+        this.seq = seq;
         this.code = code;
         this.msg = msg;
         this.traceId = traceId;
