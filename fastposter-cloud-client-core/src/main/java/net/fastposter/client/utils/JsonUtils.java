@@ -3,6 +3,7 @@ package net.fastposter.client.utils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import lombok.SneakyThrows;
+import net.fastposter.client.FastposterCloudClient;
 
 /**
  * Json工具类
@@ -15,7 +16,7 @@ import lombok.SneakyThrows;
 public class JsonUtils {
 
     /**
-     * 转换成Json
+     * 转换成Json字符串
      *
      * @param value 对象
      * @return 字符串
@@ -23,6 +24,19 @@ public class JsonUtils {
     @SneakyThrows
     public static String toJson(Object value) {
         String data = new ObjectMapper().writeValueAsString(value);
+        return data;
+    }
+
+
+    /**
+     * 转换成Json字符串
+     *
+     * @param value 对象
+     * @return 字符串
+     */
+    @SneakyThrows
+    public static String toPrettyJson(Object value) {
+        String data = new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(value);
         return data;
     }
 
@@ -37,4 +51,5 @@ public class JsonUtils {
     public static <T> T parseObject(byte[] value, Class<T> type) {
         return new ObjectMapper().readValue(value, type);
     }
+
 }
