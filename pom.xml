@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.fastposter</groupId>
     <artifactId>fastposter-cloud-client</artifactId>
-    <version>1.2.6</version>
+    <version>1.3.0</version>
     <name>fastposter-cloud-client</name>
     <description>
         fastposter-cloud-client make poster develop so easy and so happy.
