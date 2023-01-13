@@ -1,8 +1,6 @@
 package net.fastposter.demo;
 
-import lombok.SneakyThrows;
 import net.fastposter.client.FastposterCloudClient;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,9 +14,7 @@ class FastposterCloudTest {
     @Autowired
     FastposterCloudClient client;
 
-    @SneakyThrows
     @Test
-    @RepeatedTest(3)
     void testPng() {
 
         // 组装参数
