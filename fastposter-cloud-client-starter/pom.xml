@@ -9,7 +9,7 @@
     <parent>
         <groupId>net.fastposter</groupId>
         <artifactId>fastposter-cloud-client</artifactId>
-        <version>${revision}</version>
+        <version>1.2.6</version>
     </parent>
 
     <properties>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>net.fastposter</groupId>
             <artifactId>fastposter-cloud-client-core</artifactId>
-            <version>${revision}</version>
+            <version>1.2.6</version>
         </dependency>
 
         <dependency>
