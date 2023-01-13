@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cn.fastposter</groupId>
+        <groupId>net.fastposter</groupId>
         <artifactId>fastposter-cloud-client</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <groupId>cn.fastposter</groupId>
+    <groupId>net.fastposter</groupId>
     <artifactId>fastposter-cloud-client-core-example</artifactId>
     <version>${revision}</version>
 
@@ -23,7 +23,7 @@
         </dependency>
 
         <dependency>
-            <groupId>cn.fastposter</groupId>
+            <groupId>net.fastposter</groupId>
             <artifactId>fastposter-cloud-client-core</artifactId>
             <version>${revision}</version>
         </dependency>

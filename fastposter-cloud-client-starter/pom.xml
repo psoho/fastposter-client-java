@@ -7,7 +7,7 @@
     <artifactId>fastposter-cloud-client-starter</artifactId>
 
     <parent>
-        <groupId>cn.fastposter</groupId>
+        <groupId>net.fastposter</groupId>
         <artifactId>fastposter-cloud-client</artifactId>
         <version>${revision}</version>
     </parent>
@@ -20,7 +20,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.fastposter</groupId>
+            <groupId>net.fastposter</groupId>
             <artifactId>fastposter-cloud-client-core</artifactId>
             <version>${revision}</version>
         </dependency>
