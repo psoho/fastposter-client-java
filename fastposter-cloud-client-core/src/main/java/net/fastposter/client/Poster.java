@@ -48,7 +48,7 @@ public class Poster {
     /**
      * 保存海报到指定目录
      *
-     * @param path
+     * @param path 指定路径
      */
     @SneakyThrows
     public void save(String path) {
@@ -58,7 +58,7 @@ public class Poster {
     /**
      * 保存海报
      *
-     * @return
+     * @return 返回保存的路径
      */
     public String save() {
         String path = traceId.substring(0, 16) + "." + type;
@@ -72,16 +72,16 @@ public class Poster {
     /**
      * 海报大小 字节
      *
-     * @return
+     * @return 字节数
      */
     public long size() {
         return this.size;
     }
 
     /**
-     * 追踪ID
+     * 请求追踪ID，有问题时可以通过此ID查询
      *
-     * @return
+     * @return String
      */
     public String traceId() {
         return this.traceId;
@@ -90,7 +90,7 @@ public class Poster {
     /**
      * 返回Base64字符串
      *
-     * @return
+     * @return String
      */
     public String b64String() {
         return new String(bytes());
@@ -99,7 +99,7 @@ public class Poster {
     /**
      * 返回海报内存流
      *
-     * @return
+     * @return InputStream
      */
     public InputStream byteStream() {
         return new ByteArrayInputStream(bytes());

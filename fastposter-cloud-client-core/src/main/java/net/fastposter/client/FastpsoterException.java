@@ -13,7 +13,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public class FastpsoterException extends RuntimeException {
     private static final long serialVersionUID = 1L;
-
     private Long seq;
     private int code;
     private String msg;

@@ -22,7 +22,8 @@ class FastposterCloudTest {
         params.put("name", "中文测试");
 
         // 生成海报并保存
-        client.buildPoster("d31ce9b1e3b14762").params(params).build().save();
+//        client.buildPoster("d31ce9b1e3b14762").params(params).build().save();
+        System.out.println(client.buildPoster("d31ce9b1e3b14762").params(params).getArgs());
 
     }
 

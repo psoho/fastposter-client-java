@@ -67,7 +67,7 @@ public class GetPosterArgs {
      *
      * @return
      */
-    public String toJson() {
-        return JsonUtils.toJson(this);
+    public String toString() {
+        return JsonUtils.toPrettyJson(this);
     }
 }
