@@ -8,7 +8,7 @@ import java.util.Base64;
  * Base64工具类
  *
  * @author Alex小新 fastposter@163.com
- * @site <a href="https://cloud.fastposter.net/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/"></>
  */
 public class Base64Utils {
     private static final Charset DEFAULT_CHARSET;

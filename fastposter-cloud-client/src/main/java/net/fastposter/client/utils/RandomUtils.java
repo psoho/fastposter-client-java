@@ -7,7 +7,7 @@ import java.util.Random;
  * 生成海报参数
  *
  * @author Alex小新 fastposter@163.com
- * @site <a href="https://cloud.fastposter.net/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/"></>
  */
 public class RandomUtils {
 

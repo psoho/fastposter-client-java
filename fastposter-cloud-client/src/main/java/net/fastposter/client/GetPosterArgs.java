@@ -9,7 +9,7 @@ import lombok.Data;
  * 生成海报参数
  *
  * @author Alex小新 fastposter@163.com
- * @site <a href="https://cloud.fastposter.net/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/"></>
  */
 @Data
 @Builder
