@@ -1,4 +1,4 @@
-package net.fastposter.demo;
+package com.example;
 
 import net.fastposter.client.FastposterCloudClient;
 import org.junit.jupiter.api.Test;
