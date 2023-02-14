@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.fastposter</groupId>
     <artifactId>fastposter-cloud-client-parent</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
     <name>fastposter-cloud-client-parent</name>
     <description>
         fastposter-cloud-client make poster develop so easy and so happy.
@@ -19,9 +19,9 @@
 
     <modules>
         <module>fastposter-cloud-client</module>
-        <module>fastposter-cloud-client-example</module>
+<!--        <module>fastposter-cloud-client-example</module>-->
         <module>fastposter-cloud-client-starter</module>
-        <module>fastposter-cloud-client-starter-example</module>
+<!--        <module>fastposter-cloud-client-starter-example</module>-->
     </modules>
 
 
