@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.fastposter</groupId>
-    <artifactId>fastposter-cloud-client-parent</artifactId>
-    <version>1.6.0</version>
+    <artifactId>fastposter-client-parent</artifactId>
+    <version>1.7.0</version>
     <name>fastposter-cloud-client-parent</name>
     <description>
-        fastposter-cloud-client make poster develop so easy and so happy.
+        fastposter-client make poster development easy.
     </description>
     <packaging>pom</packaging>
 
@@ -18,10 +18,10 @@
     </parent>
 
     <modules>
-        <module>fastposter-cloud-client</module>
-<!--        <module>fastposter-cloud-client-example</module>-->
-        <module>fastposter-cloud-client-starter</module>
-<!--        <module>fastposter-cloud-client-starter-example</module>-->
+        <module>fastposter-client</module>
+        <module>fastposter-client-example</module>
+        <module>fastposter-client-starter</module>
+        <module>fastposter-client-starter-example</module>
     </modules>
 
 
@@ -64,9 +64,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/psoho/fastposter-cloud-client</url>
-        <connection>scm:git:git@github.com:psoho/fastposter-cloud-client.git</connection>
-        <developerConnection>scm:git:git@github.com:psoho/fastposter-cloud-client.git</developerConnection>
+        <url>https://github.com/psoho/fastposter-client-java</url>
+        <connection>scm:git:git@github.com:psoho/fastposter-client-java.git</connection>
+        <developerConnection>scm:git:git@github.com:psoho/fastposter-client-java.git</developerConnection>
     </scm>
 
     <developers>
