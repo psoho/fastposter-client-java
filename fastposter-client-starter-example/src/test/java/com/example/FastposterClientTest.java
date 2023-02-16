@@ -19,7 +19,7 @@ class FastposterClientTest {
 
         // 组装参数
         Map<String, Object> params = new HashMap<>();
-        params.put("name", "中文测试");
+        params.put("title", "中文测试");
         // 生成海报并保存
         client.buildPoster("80058c79d1e2e617").params(params).build().save();
 
