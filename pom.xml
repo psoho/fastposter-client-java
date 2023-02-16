@@ -7,7 +7,7 @@
     <version>1.7.0</version>
     <name>fastposter-client-parent</name>
     <description>
-        fastposter-client make poster development easy.
+        fastposter make poster development easy.
     </description>
     <packaging>pom</packaging>
 
