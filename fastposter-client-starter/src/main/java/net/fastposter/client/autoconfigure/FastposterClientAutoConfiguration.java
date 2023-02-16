@@ -19,13 +19,12 @@ import org.springframework.context.annotation.Configuration;
 @AllArgsConstructor
 @ComponentScan(basePackages = {"net.fastposter.client"})
 @EnableConfigurationProperties(FastposterClientProperties.class)
-@ConditionalOnProperty("fastposter")
 public class FastposterClientAutoConfiguration {
 
     private final FastposterClientProperties properties;
 
     @Bean
-    @ConditionalOnProperty(value = "fastposter.appKey")
+    @ConditionalOnProperty(value = "fastposter.app-key")
     FastposterCloudClient fastposterCloudClient() {
         return FastposterCloudClient.builder()
                 .appKey(properties.getAppKey())

@@ -1,6 +1,5 @@
 package com.example;
 
-import net.fastposter.client.FastposterClient;
 import net.fastposter.client.FastposterCloudClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +12,7 @@ import java.util.Map;
 class FastposterCloudTest {
 
     @Autowired
-    FastposterClient client;
-//    FastposterCloudClient client;
+    FastposterCloudClient client;
 
     @Test
     void testPng() {
