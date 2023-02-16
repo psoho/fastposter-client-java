@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @SpringBootTest
-class FastposterCloudTest {
+class FastposterCloudClientTest {
 
     @Autowired
     FastposterCloudClient client;
@@ -20,10 +20,8 @@ class FastposterCloudTest {
         // 组装参数
         Map<String, Object> params = new HashMap<>();
         params.put("name", "中文测试");
-
         // 生成海报并保存
-//        client.buildPoster("d31ce9b1e3b14762").params(params).build().save();
-        System.out.println(client.buildPoster("d31ce9b1e3b14762").params(params).getArgs());
+        client.buildPoster("ced9b1d5337d494c").params(params).build().save();
 
     }
 
