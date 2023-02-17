@@ -21,7 +21,7 @@
         <module>fastposter-client</module>
 <!--        <module>fastposter-client-example</module>-->
         <module>fastposter-client-starter</module>
-<!--        <module>fastposter-client-starter-example</module>-->
+        <module>fastposter-client-starter-example</module>
     </modules>
 
 
