@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.fastposter</groupId>
     <artifactId>fastposter-client-parent</artifactId>
-    <version>1.7.0</version>
+    <version>1.7.1</version>
     <name>fastposter-client-parent</name>
     <description>
         fastposter make poster development easy.
@@ -21,7 +21,7 @@
         <module>fastposter-client</module>
 <!--        <module>fastposter-client-example</module>-->
         <module>fastposter-client-starter</module>
-        <module>fastposter-client-starter-example</module>
+<!--        <module>fastposter-client-starter-example</module>-->
     </modules>
 
 

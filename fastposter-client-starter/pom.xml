@@ -9,7 +9,7 @@
     <parent>
         <groupId>net.fastposter</groupId>
         <artifactId>fastposter-client-parent</artifactId>
-        <version>1.7.0</version>
+        <version>1.7.1</version>
     </parent>
 
     <properties>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>net.fastposter</groupId>
             <artifactId>fastposter-client</artifactId>
-            <version>1.7.0</version>
+            <version>1.7.1</version>
         </dependency>
 
         <dependency>
