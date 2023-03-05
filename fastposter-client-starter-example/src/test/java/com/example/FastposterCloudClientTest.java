@@ -25,4 +25,14 @@ class FastposterCloudClientTest {
 
     }
 
+    public static void main(String[] args) {
+
+        String endpoint = "https://api.fastposter.net/";
+//        String endpoint = "https://api.fastposter.net";
+//        String endpoint = "https://api.fastposter.net//";
+        endpoint = endpoint.replaceAll("(http.+?)(/{1,})$", "$1");
+        System.out.println(endpoint);
+
+    }
+
 }
