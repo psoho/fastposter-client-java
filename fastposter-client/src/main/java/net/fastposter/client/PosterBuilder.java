@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 海报构造器
  *
- * @see <a href="https://cloud.fastposter.net/doc/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
  */
 @Builder
 public class PosterBuilder {
@@ -188,7 +188,7 @@ public class PosterBuilder {
      * 注意：客户端调用时仍需要添加指定的HTTP头，详情请参考文档。
      *
      * @return
-     * @see <a href="https://cloud.fastposter.net/doc/"></>
+     * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
      */
     public GetPosterArgs getArgs() {
         return client.getArgs(this);

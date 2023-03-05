@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
  * MD5工具类
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
  */
 public class DigestUtils {
     private static final String MD5_ALGORITHM_NAME = "MD5";

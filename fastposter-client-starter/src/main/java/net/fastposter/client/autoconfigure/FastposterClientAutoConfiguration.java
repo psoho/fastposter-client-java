@@ -3,6 +3,7 @@ package net.fastposter.client.autoconfigure;
 import lombok.AllArgsConstructor;
 import net.fastposter.client.FastposterClient;
 import net.fastposter.client.FastposterCloudClient;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * FastposterCloudClient AutoConfiguration
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
  */
 @Configuration
 @AllArgsConstructor

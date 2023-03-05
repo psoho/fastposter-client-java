@@ -14,7 +14,7 @@ import java.io.InputStream;
  * 可以通过此对象获取图片的字节数组，字节流，base64编码等。
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
  */
 public class Poster {
 

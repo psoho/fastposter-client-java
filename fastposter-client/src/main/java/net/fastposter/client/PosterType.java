@@ -7,7 +7,7 @@ import lombok.Getter;
  * 海报类型
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
  */
 @Getter
 @AllArgsConstructor

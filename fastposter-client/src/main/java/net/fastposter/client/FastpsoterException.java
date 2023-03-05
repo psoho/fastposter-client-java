@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
  * fastposter云服务客户端异常类
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/"></>
+ * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
