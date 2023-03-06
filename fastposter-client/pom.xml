@@ -3,13 +3,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fastposter-client</artifactId>
-
     <parent>
         <groupId>net.fastposter</groupId>
         <artifactId>fastposter-client-parent</artifactId>
         <version>1.8.0</version>
     </parent>
+
+    <artifactId>fastposter-client</artifactId>
+    <name>fastposter-client</name>
+    <version>1.8.0</version>
+    <packaging>jar</packaging>
+
+    <description>
+        fastposter make poster development easy.
+    </description>
 
     <dependencies>
 
