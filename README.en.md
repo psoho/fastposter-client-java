@@ -15,7 +15,7 @@
 
 Now it has served a large number of e-commerce projects, many of which have '60W+' users. It has passed the test of production environment for many years and is stable and reliable. Widely used in all kinds of e-commerce, distribution systems, e-commerce posters, e-commerce main picture and other poster generation and production scenes.
 
-> Thank you very much for your encouragement, donation and support. Open source is not easy, I hope I can stick to it.
+> Thank you very much for your encouragement, donation and support. Open source is not easy, I  hope I can stick to it.
 
 ## Document
 
