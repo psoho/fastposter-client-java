@@ -7,12 +7,12 @@
     <parent>
         <groupId>net.fastposter</groupId>
         <artifactId>fastposter-client-parent</artifactId>
-        <version>1.8.3</version>
+        <version>1.8.4</version>
     </parent>
 
     <groupId>net.fastposter</groupId>
     <artifactId>fastposter-client-example</artifactId>
-    <version>1.8.3</version>
+    <version>1.8.4</version>
 
     <dependencies>
 
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>net.fastposter</groupId>
             <artifactId>fastposter-client</artifactId>
-            <version>1.8.3</version>
+            <version>1.8.4</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp-tls -->

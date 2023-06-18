@@ -19,7 +19,7 @@ public interface Client {
     /**
      * 客户端版号
      */
-    String CLIENT_VERSION = "1.8.3";
+    String CLIENT_VERSION = "1.8.4";
     /**
      * 日期格式
      */
