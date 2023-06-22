@@ -54,6 +54,7 @@ public class GetPosterArgs {
     /**
      * 验签
      */
+    @Deprecated
     String sign;
 
     /**
