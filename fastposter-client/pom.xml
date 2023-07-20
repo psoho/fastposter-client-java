@@ -6,12 +6,12 @@
     <parent>
         <groupId>net.fastposter</groupId>
         <artifactId>fastposter-client-parent</artifactId>
-        <version>1.9.0</version>
+        <version>1.9.1</version>
     </parent>
 
     <artifactId>fastposter-client</artifactId>
     <name>fastposter-client</name>
-    <version>1.9.0</version>
+    <version>1.9.1</version>
     <packaging>jar</packaging>
 
     <description>
