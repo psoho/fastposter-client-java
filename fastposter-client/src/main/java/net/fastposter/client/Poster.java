@@ -24,11 +24,14 @@ public class Poster {
 
     String traceId;
 
+    String uuid;
+
     long size;
 
     boolean b64;
 
-    protected Poster(String traceId, PosterType type, byte[] bytes, Boolean b64) {
+    protected Poster(String uuid, String traceId, PosterType type, byte[] bytes, Boolean b64) {
+        this.uuid = uuid;
         this.type = type;
         this.traceId = traceId;
         this._bytes = bytes;
@@ -61,7 +64,8 @@ public class Poster {
      * @return 返回保存的路径
      */
     public String save() {
-        String path = traceId.substring(0, 16) + "." + type;
+//        String path = traceId.substring(0, 16) + "." + type;
+        String path = uuid + "." + type;
         if (b64) {
             path += ".b64";
         }
