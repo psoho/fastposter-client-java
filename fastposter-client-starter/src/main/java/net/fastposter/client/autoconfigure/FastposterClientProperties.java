@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * spring boot starter properties
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
+ * @see <a href="https://fastposter.net/doc/sdk/java.html"></>
  */
 @Data
 @Setter

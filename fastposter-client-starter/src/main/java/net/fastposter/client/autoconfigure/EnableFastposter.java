@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * EnableFastposter
  *
  * @author Alex小新 fastposter@163.com
- * @see <a href="https://cloud.fastposter.net/doc/sdk/java.html"></>
+ * @see <a href="https://fastposter.net/doc/sdk/java.html"></>
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
